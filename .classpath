@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/MigLayout"/>
+	<classpathentry exported="true" kind="var" path="USER_HOME/Downloads/ojdbc10.jar"/>
+	<classpathentry exported="true" kind="var" path="USER_HOME/Downloads/rs2xml/rs2xml/rs2xml.jar" sourcepath="/USER_HOME/Downloads/rs2xml/rs2xml/rs2xml.jar"/>
+	<classpathentry kind="output" path="out/production/dbcontrol"/>
+</classpath>

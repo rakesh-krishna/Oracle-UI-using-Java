@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="MigLayout">
+    <archive path="C:/Users/krishna/IdeaProjects/dbcontrol/lib/miglayout-swing.jar" />
+    <archive path="C:/Users/krishna/IdeaProjects/dbcontrol/lib/miglayout-core.jar" />
+  </library>
+</eclipse-userlibraries>
+

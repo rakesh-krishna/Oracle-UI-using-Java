@@ -1,0 +1,546 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, comp tabbedPane1::::876:x, space :::p}}"
+			"$verticalGroup": "par l {comp tabbedPane1::t::453:x}"
+		} ) {
+			name: "this"
+			"title": "DB KRISH"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "tabbedPane1FocusGained", true ) )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "tabbedPane1FocusGained", true ) )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "tabbedPane1FocusGained", true ) )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:35:p, par l {seq {comp scrollPane2:::p:653:p, space s:::p, comp button2:::p::p, space :0:146:x}, seq {par t {comp colname:::::x, comp label3::t:::x, comp label4::l:::x}, space :p:66:p, par l {comp label5::l:p:109:p, comp tabname::l:p:126:p, comp coltype:::p::p}, space :p:38:p, par l {comp label6:::p:92:p, comp len:::p:77:p}, space :p:61:p, par l {comp contype:::p::p, seq l {comp label7:::p:97:p, space :p:56:p, comp button1:::p::p}}, space :::x}}}}"
+						"$verticalGroup": "par l {seq l {space :p:24:p, par b {comp label3::b:p:28:p, comp tabname::b:p::p}, space s:::p, par l:::p {par b {comp label6::b:p:25:p, comp label7::b:p:25:p, comp button1::b:p::p}, comp label4:::::x, comp label5:::::x}, space s:::p, par b {comp colname::b:p::p, comp coltype::b:p::p, comp contype::b:p::p, comp len::b:p::p}, par l {seq {space :p:29:p, comp scrollPane2:::p:219:p, space ::16:x}, seq t {space ::173:x, comp button2:::p::p, space :p:61:p}}}}"
+					} ) {
+						name: "panel1"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "TABLE NAME"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "tabname"
+							addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "tabnameCaretUpdate", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "COLUMN NAME"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "COLUMN TYPE"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "LENGTH"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "CONSTRAINT"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button1"
+							"text": "ADD COLUMN"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "colname"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "coltype"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "varchar"
+								addElement( "varchar" )
+								addElement( "char" )
+								addElement( "date" )
+								addElement( "integer" )
+								addElement( "number" )
+								addElement( "timestamp" )
+								addElement( "boolean" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "len"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "contype"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "null"
+								addElement( "null" )
+								addElement( "not null" )
+								addElement( "primary key" )
+								addElement( "unique" )
+							}
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JTextPane" ) {
+								name: "textPane1"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button2"
+							"text": "create table"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "create table"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane4"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {space ::740:x, comp button5:::p::p, space :p:77:p}, seq l {space :p:63:p, par t {seq l {par l {comp label11::l:p:90:p, comp ftab::l:p:90:p}, space :p:74:p, par l {comp fvar:::p:128:p, comp label12:::p:84:p}, space ::69:x}, seq {par l {seq {space :0:0:x, comp label15:::p::p}, seq l {comp label16:::p:104:p, space ::50:x}}, space s:::p, comp textField6:::p:106:p, space :p:83:p}}, par l {comp stab:::p:97:p, comp label13:::p:119:p}, space :p:83:p, par l {comp label14:::p:84:p, comp svar:::p:115:p}, space ::154:x}}"
+						"$verticalGroup": "par l {seq l {space :p:43:p, par b {comp label15::b:p::p, comp label16::b:p:30:p, comp textField6::b:p::p}, space :p:31:p, par b {comp label11::b:p:28:p, comp label12::b:p::p, comp label14::b:p:28:p, comp label13::b:p:28:p}, space :p:34:p, par b {comp ftab::b:p::p, comp fvar::b:p::p, comp stab::b:p::p, comp svar::b:p::p}, space ::118:x, comp button5:::p::p, space :p:65:p}}"
+					} ) {
+						name: "panel3"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label11"
+							"text": "frist table name"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label12"
+							"text": "column name"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label13"
+							"text": "second table name"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "column name"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "ftab"
+							addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField5FocusLost", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "fvar"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "stab"
+							addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "stabFocusLost", true ) )
+							addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "stabFocusLost", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "svar"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button5"
+							"text": "create"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField6"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label16"
+							"text": "foriegn key name"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Foriegn Key"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane7"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq {space :p:76:p, comp label18:::p::p, space :p:67:p, comp comboBox3:::p::p, space :p:81:p, comp button7:::p::p, space :0:0:x}, seq l {space :::p, comp scrollPane8::::883:x}}, space :::p}}"
+						"$verticalGroup": "par l {seq {space :p:38:p, par b {comp label18::b:p:30:p, comp comboBox3::b:p::p, comp button7::b:p::p}, space s:::p, comp scrollPane8::::327:x, space :::p}}"
+					} ) {
+						name: "panel5"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "panel5MouseEntered", true ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label18"
+							"text": "TABLE NAME"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox3"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "none"
+								addElement( "none" )
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox3ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox3ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox3ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox3ItemStateChanged", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "comboBox3MouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox3ItemStateChanged", true ) )
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox3ItemStateChanged", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button7"
+							"text": "INSERT"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "button7MouseReleased", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane8"
+							"horizontalScrollBarPolicy": 32
+							"verticalScrollBarPolicy": 22
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+								"$columnSpecs": "0, 0"
+								"$rowSpecs": "0, 0, 0"
+								"$hGap": 5
+								"$vGap": 5
+								"$alignLeft": true
+								"$alignTop": true
+							} ) {
+								name: "ipan"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Insert Values"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane9"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq l {space :p:62:p, comp label19:::p:88:p, space :p:32:p, comp comboBox5:::p::p}, seq l {space :p:17:p, par l {comp button8:::p::p, seq {comp scrollPane10:::p:416:p, space :p:56:p, comp scrollPane11:::p:340:p}}}}, space ::66:x}, seq t {space :0:717:x, comp button9:::p:91:p, space :p:87:p}}"
+						"$verticalGroup": "par l {seq l {space :p:38:p, par b {comp label19::b:p:25:p, comp comboBox5::b:p::p}, space :p:26:p, par l:::p {comp scrollPane11::::175:x, comp scrollPane10::::175:x}, space u:::p, comp button8:::p::p, space :::p, comp button9:::p::p, space ::72:x}}"
+					} ) {
+						name: "panel6"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label19"
+							"text": "Table Name"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox5"
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox5ItemStateChanged", true ) )
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox5ItemStateChanged", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane10"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+								"$columnSpecs": "0, 0"
+								"$rowSpecs": "0, 0, 0"
+								"$hGap": 5
+								"$vGap": 5
+								"$alignLeft": true
+								"$alignTop": true
+							} ) {
+								name: "upan"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button8"
+							"text": "Add column"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane11"
+							add( new FormComponent( "javax.swing.JEditorPane" ) {
+								name: "uwhere"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button9"
+							"text": "Update"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "button9KeyPressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "button9KeyReleased", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Update"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane12"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:76:p, par l {comp label21::l:p:76:p, comp label20::l:p:128:p}, space :p:75:p, par l {seq {comp button10:::p::p, space :0:538:x}, seq {par l {comp textField5:::p:223:p, comp comboBox6:::p::p}, space ::393:x}}}}"
+						"$verticalGroup": "par l {seq {space :p:55:p, par b {comp label20::b:p:24:p, comp comboBox6::b:p::p}, space :p:57:p, par b {comp textField5::b:p::p, comp label21::b:p:27:p}, space :p:79:p, comp button10:::p::p, space ::128:x}}"
+					} ) {
+						name: "panel7"
+						addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "panel7FocusGained", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "panel7MouseEntered", true ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label20"
+							"text": "Table name"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox6"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField5"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label21"
+							"text": "Condition"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button10"
+							"text": "delete"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Delete"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane13"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:74:p, par l {seq {comp scrollPane14:::p:251:p, space ::570:x}, seq {par l {comp label22:::p:93:p, comp label23:::::x}, par l {seq {space :p:29:p, comp textField7:::p:99:p, space :p:65:p, comp comboBox7:::p::p, space :p:87:p, comp comboBox8:::p::p, space :p:88:p, comp comboBox9:::p::p}, seq l {space :p:201:p, par l {comp scrollPane15:::p:444:p, comp label24:::p:87:p}}}, space ::83:x}}}, seq t {space ::694:x, comp button11:::p::p, space :p:123:p}}"
+						"$verticalGroup": "par l {seq l {space :p:62:p, par b {comp label22::b:p:33:p, comp textField7::b:p::p, comp comboBox7::b:p::p, comp comboBox8::b:p::p, comp comboBox9::b:p::p}, space :p:55:p, par b {comp label23::b:p:28:p, comp label24::b:p:28:p}, space s:::p, par l:::p {comp scrollPane14::::151:x, comp scrollPane15::::151:x}, space ::21:x, comp button11:::p::p, space :p:21:p}}"
+					} ) {
+						name: "panel8"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "panel8MouseEntered", true ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label22"
+							"text": "TRIGGER  NAME"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField7"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox7"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "BEFORE"
+								addElement( "BEFORE" )
+								addElement( "AFTER" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox8"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "INSERT"
+								addElement( "INSERT" )
+								addElement( "UPDATE" )
+								addElement( "DELETE" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox9"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label23"
+							"text": "DECLARE"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane14"
+							add( new FormComponent( "javax.swing.JTextPane" ) {
+								name: "textPane3"
+								"text": "declare here"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label24"
+							"text": "BEGIN"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane15"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "textArea1"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button11"
+							"text": "text"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button11MouseClicked", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Trigger"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane16"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :83:83:p, par l {seq l {comp scrollPane18:::p:546:p, space :p:90:p, comp button12:::p::p, space ::98:x}, seq l {par l {comp label25:::p:82:p, comp label27:::::x}, space :p:31:p, par l {seq {comp textField8:::p:91:p, space :p:61:p, comp label26:::p:61:p, space :p:32:p, comp comboBox10:::p::p}, seq {comp textField9:::p:258:p, space :p:28:p, comp comboBox11:::p::p, space :p:52:p, comp scrollPane17:::p:239:p}, comp textField10::l:p:117:p}, space ::44:x}}}, seq t {space ::79:x, comp label28:::p:86:p, space :p:730:p}}"
+						"$verticalGroup": "par l {seq l {space :p:43:p, par b {comp label25::b:p:27:p, comp textField8::b:p::p, comp comboBox10::b:p::p, comp label26::b:p:30:p}, par l {seq {space :p:28:p, par b {comp label27::b:p:25:p, comp textField9::b:p::p, comp comboBox11::b:p::p, comp scrollPane17::b:p:67:p}, space :::p, par b {comp label28::b:p:26:p, comp textField10::b:p::p}, space :p:27:p, comp scrollPane18:::p:200:p, space ::12:x}, seq t {space ::234:x, comp button12:::p::p, space :p:106:p}}}}"
+					} ) {
+						name: "panel9"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label25"
+							"text": "Name"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField8"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox10"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "FUNCTION"
+								addElement( "FUNCTION" )
+								addElement( "PROCEDURE" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label26"
+							"text": "TYPE"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label27"
+							"text": "ParaMeters"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField9"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox11"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "IS"
+								addElement( "IS" )
+								addElement( "AS" )
+							}
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane17"
+							add( new FormComponent( "javax.swing.JTextPane" ) {
+								name: "textPane4"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane18"
+							add( new FormComponent( "javax.swing.JTextPane" ) {
+								name: "textPane5"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button12"
+							"text": "CREATE"
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "button12KeyPressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button12MouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "button12KeyPressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "button12KeyPressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "button12KeyPressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button12MouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label28"
+							"text": "RETURN"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField10"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Function"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane5"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq {space :p:87:p, comp label17:::p:109:p, space :p:68:p, comp comboBox4:::p::p, space :p:88:p, comp button6:::p::p}, seq l {space :p:37:p, comp scrollPane19:::p:644:p}}, space :::x}}"
+						"$verticalGroup": "par l {seq {space :p:43:p, par b {comp button6::b:p::p, comp comboBox4::b:p::p, comp label17::b:p:31:p}, space s:::p, comp scrollPane19:::p:306:p, space ::156:x}}"
+					} ) {
+						name: "panel4"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "panel4MouseEntered", true ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label17"
+							"text": "Table Name"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox4"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button6"
+							"text": "View"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "button6MouseExited", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane19"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table1"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "View Tables"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane3"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:44:p, par l {comp label1::l:p:101:p, comp label2::l:p::p}, space :::p, par l {seq {par l {comp comboBox1::l:p::p, comp label10::l:::x}, space :p:63:p}, seq {comp comboBox12:::p::p, space :::x}}, par l {seq l {comp textField1:::p:114:p, space :p:118:p, comp button3:::p::p, space :p:149:p, comp button4:::p::p, space ::144:x}, seq l {comp comboBox2:::p:94:p, space :p:54:p, par l {comp label8:::::x, seq {comp textField3:::p:100:p, space :0:48:x}}, space :::p, par l {comp label9:::p:138:p, comp textField4:::p:98:p}, space :p:241:p}}}}"
+						"$verticalGroup": "par l {seq l {space :p:30:p, par b {comp label1::b:p:29:p, comp comboBox1::b:p::p, comp textField1::b:p::p, comp button3::b:p::p}, space :p:29:p, par b {comp label8::b:p:28:p, comp label10::b:p:28:p, comp label9::b:p:25:p}, space :::p, par b {comp button4::b:p::p, comp label2::b:p:25:p, comp comboBox2::b:p::p, comp textField3::b:p::p, comp comboBox12::b:p::p, comp textField4::b:p::p}, space ::256:x}}"
+					} ) {
+						name: "panel2"
+						addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "panel2FocusGained", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "panel2MouseEntered", true ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "DROP"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox1"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "table"
+								addElement( "table" )
+								addElement( "function" )
+								addElement( "constraint" )
+								addElement( "trigger" )
+								addElement( "procedure" )
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox1ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox1ItemStateChanged", true ) )
+							addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "comboBox1FocusLost", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField1"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button3"
+							"text": "RUN"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "ALTER     "
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox2"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "add"
+								addElement( "add" )
+								addElement( "modify" )
+								addElement( "drop column" )
+								addElement( "rename column" )
+								addElement( "rename to" )
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox2ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField3"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField4"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button4"
+							"text": "ALTER"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "column name"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "column type"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "Table name"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBox12"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Dropper"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 890, 485 )
+		} )
+	}
+}
